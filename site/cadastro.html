@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stily.css">
+	<title>Cadastro</title>
+<head>
+
+
+<center>
+	<div class="menu">
+	<ul><br/>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="produtos.html">Produtos</a></li>
+		<li><a href="sobre.html">Sobre Nós</a></li>
+		<li><a href="serviços.html">Serviços</a></li>
+        <li><a href="cadastro.html">Cadastre-se</a></li>
+	</ul>
+		</div>
+</center>
+<figure>
+	<img class = "cadastro"  = src="imagens/cadastro.png"></br></br></br>
+</figure>
+</head>
+<body> 
+	<style>
+		body{
+			background-color: #BFB5D8;
+			font-family: sans-serif;
+    		font-size: 1em;
+    		color: #59429d;
+    		margin-left: 10%;
+			margin-right: 15px;
+    		margin-top: 2%;
+    		justify-content: center;
+		}
+		form{
+			background-color: #BFB5D8;
+			
+    		font-size: 1em;
+    		color: #59429d;
+    		margin-left: 10%;
+			margin-right:10%;
+    		margin-top: 2%;
+    		
+		}
+	</style>
+	 
+
+    
+
+       
+        
+
+<form>
+	<fieldset class="grupo">
+				
+		<div class="campo">
+			<label for="nome"><strong>Nome</strong></label>
+				<input type ="text" name= "nome" id="nome" placeholder= "Insira seu nome" required>
+		</div>
+   
+
+		<div class="campo">
+			<label for ="sobrenome"><strong>Sobrenome</strong></label>
+				<input type= "text" name="sobrenome" id="sobrenome" placeholder = "Insira seu sobrenome"required>
+		</div>
+	
+
+		<div class="campo">
+			<label for="email"><strong>Email</strong></label>
+				<input type="email" name="email" id="email" placeholde="Insira seu email" placeholder="Insira seu email"required>
+		</div>
+   
+			
+		<div class="campo">
+			<label for="idade"><strong>Idade</strong></label>
+				<input type="number" name="idade"  id="idade" placeholder="Insira sua idade"required>
+		</div>
+	
+
+		<div class="campo">
+			<label for="genero"><strong>Qual o seu gênero</strong></label>
+			<label>
+				<input type="radio" name="genero" value="masculino">Masculino
+			</label>
+			<label>
+				<input type="radio" name="genero" value="feminino">Feminino
+			</label>
+			<label>
+				<input type="radio" name="genero" value="naoDizer">Prefiro não dizer
+			</label>
+		</div>
+            
+    </fieldset> 
+
+            
+			
+
+            
+	<fieldset class="grupo">
+
+		<div class="campo">
+			<label for="numeroCasa"><strong>Número da residência</strong></label>
+				<input type="number" name= "numeroCasa" id="numeroCasa" placeholder="Número da residência"required>
+		</div>
+        
+		<div class="campo">
+			<label for ="estado"><strong>Estado</strong></label>
+				<input type ="text" name= "estado" id="estado" placeholder="Nome do estado"required>
+		</div>
+
+		<div class="campo">
+			<label for="logradouro"><strong>Logradouro</strong></label>
+				<input type= "text" name="logradouro" id="logradouro" placeholder="Rua, Avenida, Alameda, ..."required>
+   		</div>
+
+   		<div class="campo">
+			<label for ="cep"><strong>CEP</strong></label>
+				<input type = "text" name="cep" id="cep" placeholder="XXXXX-XXX"required>
+		</div>
+
+		<div class="campo">
+			<label for="city"><strong>Cidade</strong></label>
+				<input type="text" name="city" id ="city" placeholder="nome da cidade onde mora"required>
+		</div>
+
+		<div class="campo">
+			<label for="bairro"><strong>Bairro</strong></label>
+				<input type="text" name="bairro" id="bairro" placeholder="Nome da rua, avenida, onde mora"required>
+		</div>
+
+   		<div class="campo">
+	   		<label for="rua"><strong>Nome da rua, avenida, ...</strong></label>
+		   		<input type="text" name="rua" id="rua" placeholder="Nome do bairro onde mora"required>
+   		</div>
+
+		   <div class="campo">
+            <label for="regiao"><strong>Região do Brasil que mora</strong></label>
+            	<select id="regiao" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Sul</option>
+                  <option>Sudeste</option>
+                  <option>Centro-oeste</option>
+				  <option>Norte</option>
+                  <option>Nordeste</option>
+                </select>
+        </div>
+			
+   		
+
+	</fieldset>
+   
+	<fieldset>
+
+		<div class="campo">
+			<label for ="prod"><strong>Produto(s)</strong></label>
+			<input type ="text" name= "prod" id="prod" placeholder="Nome do(s) produto(s) visto no site"required>
+		</div>
+
+
+		<div class="campo">
+			<label for = "preço"><strong>Preço no Site</strong></label>
+				<input type ="text" name="preço" id = "preço" placeholder="Preço que está estipulado no site"required>
+		</div>
+
+
+		<div class="campo">
+			<label for="quantidade"><strong>Quantidade</strong></label>
+				<input type ="number" name="quantidade" id = "quantidade" placeholder="Quantidade que deseja comprar"required>
+		</div>
+
+        <div class="campo">
+            <label><strong>Selecione a forma de pagamento:</strong></label><br>
+                <input type="radio" id="dinheiro" name="dinheiro" value="dinheiro">
+            <label for="dinheiro"> Dinheiro</label>
+                <input type="radio" id="cartaoCred" name="cartaoCred" value="cartaoCred">
+            <label for="cartaoCred"> Cartão de crédito</label>
+                <input type="radio" id="cartaoDeb" name="cartaoDeb" value="cartaoDeb">
+            <label for="cartaoDeb">Cartão de débito</label>
+        </div>
+
+    </fieldset>
+
+
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+</form>
+
+</body>
+</html>
+
+<figure>
+</br></br></br></br></br></br></br><img class = "ctt"  = src="imagens/ctt.png">
+</figure>
